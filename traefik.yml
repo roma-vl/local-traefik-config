@@ -1,0 +1,16 @@
+# traefik.yml
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+    http:
+      tls: true
+    forwardedHeaders:
+      insecure: false
+    # Ось так задаються таймаути:
+    transport:
+      respondingTimeouts:
+        readTimeout: 3600s
+        writeTimeout: 3600s
+        idleTimeout: 1800s
