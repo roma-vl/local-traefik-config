@@ -16,6 +16,8 @@ chmod +x mkcert-v*-linux-amd64
 sudo mv mkcert-v*-linux-amd64 /usr/local/bin/mkcert
 mkcert -install
 
-mkcert dev.auction.filkx.com dev.api.auction.filkx.com dev.live.filkx.com dev.api.live.filkx.com
+mkcert dev.auction.filkx.com dev.api.auction.filkx.com dev.live.filkx.com dev.api.live.filkx.com dev.filkx.com
 
 і перемістити сертифікати в docker/certs
+
+
